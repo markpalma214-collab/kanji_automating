@@ -86,12 +86,3 @@ in `stats.json`, separate from your kanji database. Two things use this:
 None of these ever leave your machine except for the vocabulary text sent
 to the Groq API when you actively use an AI page.
 
-## Extending further
-
-- Add a new AI feature: create `ai/your_feature.py` + a prompt builder in
-  `ai/prompts.py`, then a page in `ui/your_feature_page.py` that calls it
-  through `async_utils.run_async`. Wire it into `KanjiApp._build_pages`
-  and the sidebar nav list in `kanji_app.py`.
-- Swap the model: change `AIClient.DEFAULT_MODEL` or pass
-  `model_name=` when constructing `AIClient()`. Any Groq-hosted chat
-  model that supports JSON mode will work.
