@@ -1,4 +1,4 @@
-# Kanji Database — AI Edition
+# Kanji Database — 
 
 A Tkinter desktop app for building and studying a personal kanji database,
 now extended with Groq-powered (Llama 3.3) drills, reading practice, story mode, and
